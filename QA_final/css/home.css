@@ -1,0 +1,44 @@
+@import url('https://fonts.cdnfonts.com/css/futura-pt');
+
+.home-desc {
+    display: flex;
+    grid-template-columns: 1fr auto;
+    color: black;
+    font-family: 'Futura PT', sans-serif;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+    margin-left: 40px;
+    z-index: 1;
+  }
+  
+  .intro {
+    font-weight: 600;
+    font-size: 53px;
+  }
+  
+  .intro-cont {
+    font-weight: 300;
+    font-size: 35px;
+    white-space: pre-line;
+    margin-top: -30px;
+  }
+  
+  .coffee {
+    max-width: 400px;
+    margin-top: 30px;
+    margin-left: 200px;
+  }
+
+  .btn {
+    display: inline-block;
+    font-weight: 600;
+    font-size: 25px;
+    padding: 15px 40px;
+    background-color: #542D23;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 20px;
+    font-family: var(--sourcecode);
+    margin-top: -10px;
+  }

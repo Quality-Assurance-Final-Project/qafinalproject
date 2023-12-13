@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" type="text/css" href="css/contact.css" />
+		<link rel="stylesheet" type="text/css" href="css/navbarfooter.css" />
+        <title>Contact Form</title>
+    </head>
+    <body>
+		<!-- Navbar -->
+		<div class="navbar">
+			<img src="img/logo.png" alt="Logo" width="80" height="40">
+			<a href="#contact">Contact</a>
+			<a href="#learn">Learn</a>
+			<a href="#home">Home</a>
+		  </div>
+
+		  <!-- Form -->
+        <div class="container">
+	<div class="row">
+			<h1>Contact Us</h1>
+	</div>
+<center>
+    <hr>
+</center>
+	<div class="row">
+			<h3 style="text-align:center"><strong>Do you have any questions?</strong></h3>
+	</div>
+	<div class="row input-container">
+			<div class="col-md-6 col-sm-12">
+				<div class="styled-input">
+					<input type="text" required id="nameInput" oninput="validateName()" />
+					<label><strong>Your name</strong></label> 
+				</div>
+			</div>
+			<div class="col-md-6 col-sm-12">
+				<div class="styled-input" style="float:right;">
+					<input type="text" required id="emailInput" />
+					<label><strong>Your email</strong></label> 
+				</div>
+			</div>
+            <div class="col-xs-12">
+				<div class="styled-input wide">
+					<input type="text" required />
+					<label><strong>Subject</strong></label> 
+				</div>
+			</div>
+			<div class="col-xs-12">
+				<div class="styled-input wide">
+					<textarea required id="msgInput"></textarea>
+					<label><strong>Message</strong></label>
+				</div>
+			</div>
+			<center>
+				<div class="col-xs-12">
+					<div class="btn-lrg submit-btn" onclick="submitForm()"><strong>Submit</strong></div>
+				</div>
+			</center>
+	</div>
+</div>
+<center>
+<hr>
+</center>
+<H2>Contact Information</H2>
+	<center>
+	<br>
+	<div style="width: 100%; height: 100%; color: black; font-size: 22px; font-family: Futura PT; font-weight: 600; word-wrap: break-word"><i class="fa fa-location-arrow"></i>&nbsp;&nbsp;1234 Somewhere Street&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i class="fa fa-envelope"></i>&nbsp;&nbsp;1234mail@gmail.com</div><br>
+	<br>
+		<div style="width: 100%; height: 100%; position: relative">
+		<div style="width: 100%; height: 100%; color: black; font-size: 22px; font-family: Futura PT; font-weight: 600; word-wrap: break-word"><i class="fa fa-phone"></i>&nbsp;&nbsp;705 123 4567</div><br>
+	</div>
+	</div>
+	</center>
+
+<!-- footer -->
+<div class="footer">
+    <div class="footer-container">
+      <div class="footer-content">
+        <p>Cuppa</p>
+        <br>
+        <p>1234 Somewhere Street</p>
+        <br>
+        <p>Copyright &copy; Cuppa Date All Rights Reserved</p>
+      </div>
+    </div>
+  </div>
+
+
+  <script>
+	function validateName() {
+		var nameInput = document.getElementById("nameInput");
+		nameInput.value = nameInput.value.replace(/[^a-zA-Z\s]/g, '');
+	}
+
+	function submitForm() {
+		var nameInput = document.getElementById("nameInput").value;
+		var emailInput = document.getElementById("emailInput").value;
+		var msgInput = document.getElementById("msgInput").value;
+
+		if (nameInput === "") {
+			alert("Please enter your name.");
+			return;
+		}
+
+		if (emailInput === "") {
+			alert("Please enter your email.");
+			return;
+		}
+
+		if (msgInput === "") {
+			alert("Please enter your message.");
+			return;
+		}
+
+		alert("Form submitted successfully!");
+	}
+</script>
+
+
+
+</body>
+</html>

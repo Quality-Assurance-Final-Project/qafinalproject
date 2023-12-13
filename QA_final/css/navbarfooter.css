@@ -1,0 +1,64 @@
+@import url('https://fonts.cdnfonts.com/css/futura-pt');
+ 
+/* nav */
+ body {
+      margin: 0;
+      font-family: 'Futura PT', sans-serif;
+      background-color: #F0E2C5;
+    }
+
+.navbar {
+      background-color: #884A39;
+      overflow: hidden;
+      padding: 15px;
+    }
+
+.navbar a {
+      float: right;
+      display: block;
+      color: #000000;
+      font-size: 26px;
+      font-weight: 600;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+    }
+
+.navbar a:hover {
+      color: #F0E2C5;
+    }
+
+.navbar img {
+      float: left;
+      height: auto;
+      padding-left: 20px;
+    }
+
+/* footer */
+.footer {
+  color: #000000;
+  font-family: 'Futura PT', sans-serif;
+  background-color: #542D23;
+  padding: 50px 0;
+  text-align: center;
+  width: 100%;
+  margin-top: 100px;
+}
+
+.footer-container {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.footer-container h1 {
+  font-weight: 400;
+  font-size: 30px;
+}
+
+.footer-content p {
+  margin: 0;
+  font-family: 'Futura PT', sans-serif;
+  font-size: 25px;
+  font-weight: 600;
+}
